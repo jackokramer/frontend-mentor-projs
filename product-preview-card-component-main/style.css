@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --teal: #008080;
+    --light-grey: #D3D3D3;
+    --gun-metal: #1C232B;
+    --Aurometal-saurus: #6C7289;
+    --beige:#EEE9cb;
+    --alice-blue: #d7ecff;
+
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--beige);
+}
+h4{
+    color: var(--Aurometal-saurus);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+.descriptxt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--Aurometal-saurus);
+}
+.container{
+    display: block;
+    margin: 0 auto;
+    max-width: 1750px;
+    max-height: 850px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: var(--alice-blue);
+
+}
+
+
+
+.mobile-perfume-img{
+    max-width: 100%;
+    /* display: block; */
+}
+.part1,.part-2{
+    padding: 2em;
+    height: 611px;
+    width: 343px;
+}
+
+
+
+.price{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.new-price{
+    font-size: 32px;
+    color: var(--teal);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.original-price{
+    text-decoration: line-through;
+    margin-left: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.btn{
+    background: var(--teal);
+    color: aliceblue;
+    text-decoration: none;
+    /* text-align: center; */
+    border: none;
+    width: 236px;
+    height: 4em;
+    border-radius: .5em;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    /* margin-left: 1em; */
+}
+
+.btn-text, .icon{
+    text-align: center;
+    margin-left: 2rem;
+}
+
+
+.btn:hover{
+    background: #1A4032;
+}
+
+
+/*  */
+
+
+ .attribution {
+    padding: 2em;
+    position: fixed;
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media(min-width:800px){
+    .container {
+        display: flex;
+        flex: row;
+        max-width: 650px;
+        max-height: 650px;
+        border:#1C232B 3px solid;
+        }
+
+    .mobile-perfume-img {
+        max-width: 100%;
+        max-height: 300vh;
+        }
+    .perfume-img{
+        width: 300px;
+        height: 450px;
+    }
+    .original-price {
+        margin-left: 2rem;
+        }
+        .descriptxt{
+            word-spacing: .25em;
+        }
+        .part-1,.part-2 {
+            padding: 2em;
+        }
+ }
